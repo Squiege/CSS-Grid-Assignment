@@ -1,0 +1,87 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+body {
+    flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.acurax.com%2Fwp-content%2Fthemes%2Facuraxsite%2Fimages%2Finner_page_bnr.jpg%3Fx26444&f=1&nofb=1&ipt=8bc91f093bd4d35664f869db2a822501619db86355509c486023f565c3cfb934&ipo=images');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    align-items: center;
+    color: aliceblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.child_1 p {
+    display: flex;
+    justify-content: center;
+}
+
+.child_2 p {
+    display: flex;
+    justify-content: center;
+}
+
+.child_7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    header {
+        height: auto;
+    }
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav, footer {
+        grid-template-columns: 1fr;
+    }
+}
